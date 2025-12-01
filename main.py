@@ -33,7 +33,7 @@ def generate_user():
         "father_name": father_name,
         "gender": gender,
         "age": random.randint(18, 60),
-        "email": faker.email(),
+        "email": faker.mail(),
         "phone": faker.phone_number(),
         "job": job,
         "salary": salary,
@@ -58,3 +58,4 @@ def get_users():
 # So DO NOT rename this to `handler` or wrap it — this works correctly
 # Just export `app` directly.
 # Remove `app.run()` since Vercel runs it automatically.
+
